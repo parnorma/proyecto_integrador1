@@ -1,0 +1,85 @@
+/* aca solo ponemos tipografia colores*/
+/* quitamos margenes y espaciados*/
+/* *{
+    margin:0;
+    padding: 0;
+}*/
+h1{
+    margin:0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+.font-yellow{
+    color:#EAC926;
+}
+.bg-yellow{
+    background-color: #EAC926;
+}
+.font-blue{
+    color:#03264C;
+}
+.bg-blue{
+    background-color:#03264C;
+}
+.font-light-blue{
+    color:#1259c3;
+}
+.bg-light-blue{
+    background-color:#1259c3;
+}
+.font-dark-gray{
+    color:#666;
+}
+.bg-dark-gray{
+    background-color:#666;
+}
+.font-gray{
+    color:#ebebeb;
+}
+.bg-gray{
+    background-color:#ebebeb;
+}
+.font-green{
+    color:#39b54a;
+}
+.bg-green{
+    background-color:#39b54a;
+}
+
+.font-heading{
+    font-size: 24px;
+}
+.font-large{
+    font-size: 18px;
+}
+.font-small{
+    font-size: 16px;
+}
+.nav-section{
+    margin:0;
+    padding: 0;
+}
+/* .nav-bar > ul > li > a*/
+.nav-bar ul li a{
+    text-decoration: none;  
+    color: black;  
+}
+.nav-bar ul li{
+    list-style: none;
+}
+.bar-icon{
+   text-align: center;
+}
+.icono{
+    width: 30px;
+    height: 30px;
+    font-size: 20px; 
+    align-content: center;  
+}
+/* .nav-section 
+list-style: none   se apunta al li
+text-decoration: none  se apunta al a
+*/
+

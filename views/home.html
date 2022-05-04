@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercado Liebre</title>
+    <!-- agregamos las fuentes a usar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- seleccionamos en font-awesome la version 5.15.4 para los iconos-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <!--importamos el normalize-->
+    <!-- el normalize lo hago aca porque lo va a tener todas las carpetas de mi proyecto
+        es para que se vea igual en cualquier navegador, le sacamos los estilos extras
+        que tiene cada navegador
+        bajamos el normalize de google -->
+    <link rel="stylesheet" href="/css/normalize.css">
+
 </head>
 <body>
-    <header>
+    <header class="bg-yellow ">
         <img src="/images/logo-mercado-liebre.svg">
         <nav>Este es el lugar para poner la barra de busqueda</nav>
-        <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
-        <nav>
+        <h3>
+            <i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+        </h3>
+        <nav class="nav-bar">
             <ul>
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
@@ -19,13 +37,25 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul>
-                <!--   emmet   -->
+                <!--   emmet   copilot -->
                  <!-- li*4>e  -->
-                <li><a href="#">Crea tu cuenta</a></li>
-                <li><a href="#">Ingresá</a></li>
-                <li><a href="#">Mis Compras</a></li>
+                <li><a href="#">Crea tu cuenta</a>
+                    <i class="fas fa-address-card"></i>
+                </li>
+                <li>
+                    <a href="#">Ingresá</a>
+                    <i class="fas fa-sign-in-alt"></i>
+                </li>
+                <li>
+                    <a href="#">Mis Compras</a>
+                    <i class="fas fa-shopping-basket"></i>
+                </li>
             </ul>
+            <div class="burger-menu ">
+                <i class="fas fa-bars bg-light-blue font-gray" ></i>
+            </div>
         </nav>
+
     </header>
     <img src="/images/img-home-banner.jpg" alt="Banner" width="100%">  
     <main> 
