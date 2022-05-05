@@ -1,15 +1,14 @@
 /* aca solo ponemos tipografia colores*/
 /* quitamos margenes y espaciados*/
-/* *{
-    margin:0;
-    padding: 0;
-}*/
+*{
+    box-sizing: border-box;
+}
 h1{
     margin:0;
 }
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
 }
 .font-yellow{
     color:#EAC926;
@@ -64,22 +63,51 @@ body {
 /* .nav-bar > ul > li > a*/
 .nav-bar ul li a{
     text-decoration: none;  
-    color: black;  
+    color: black;     
 }
 .nav-bar ul li{
     list-style: none;
+    margin: 0px;
+    padding: 0px; 
+}
+.nav-bar ul{
+    padding: 0px; 
 }
 .bar-icon{
    text-align: center;
 }
-.icono{
-    width: 30px;
-    height: 30px;
-    font-size: 20px; 
-    align-content: center;  
+h3{
+    text-align: center 
 }
-/* .nav-section 
-list-style: none   se apunta al li
-text-decoration: none  se apunta al a
-*/
-
+.burger-menu{
+    text-align: center;
+}
+.icon-size{
+    font-size: 25px; 
+    padding: 1%;
+    border-radius: 15%;
+}
+.header-padding{
+    padding-bottom: 3%;
+}
+/* para la seccion del footer*/
+.footer-align{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    padding-top: 10%;
+}
+.footer-align section{
+    margin-bottom: 8%;
+}
+.footer-align section footer{
+    margin-top: 1%;
+}
+.icon-footer{
+    font-size: 200%;    
+}
+h5{
+    margin: 0;
+    padding: 0;
+    padding-top: 2%;
+}
