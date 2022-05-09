@@ -1,0 +1,10 @@
+@media (min-width: 361px) {
+    .nav-bar{
+        display: none;
+    } 
+    .burger-menu{
+        padding-top: 3%;
+        display: block;
+        padding-bottom: 3%;
+    }     
+}

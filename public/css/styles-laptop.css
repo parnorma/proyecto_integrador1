@@ -1,0 +1,14 @@
+@media (min-width: 769px) {
+    .product-title {      
+      display: none;
+    }
+    .product {
+      box-shadow: none;
+    }
+    .nav-bar{
+        display: block;
+    }  
+    .burger-menu{
+        display: none;
+    }   
+  }
