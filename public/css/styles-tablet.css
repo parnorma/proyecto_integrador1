@@ -6,5 +6,8 @@
         padding-top: 3%;
         display: block;
         padding-bottom: 3%;
-    }     
+    }  
+    .product{
+        width: 50%;
+    }  
 }

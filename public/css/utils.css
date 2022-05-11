@@ -50,3 +50,6 @@
   .p-15{
       padding: 15px;
   }
+  .relative{
+    position: relative;
+  }

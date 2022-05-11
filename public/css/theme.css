@@ -78,23 +78,50 @@ body {
     border-radius: 5px;
 }
 .truck-icon {
-    padding: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
     width: 30px;
     height: 30px;
-    font-size: 18px;
     border: 1px solid #39b54a;
+    background-color: #FFF;
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
   }
 .product {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 100%;
   }
 
-  .product-title{
+.product-title{
     margin-top: 10px;
 }
 .ptb-com-cuotas{
     padding-top: 3%;
     padding-bottom: 1%;
+}
+/* para que el precio y el descuento queden en la misma linea*/
+.flex-precio-desc{
+    display: flex;
+    flex-wrap: wrap;  
+}
+.w-precio{
+    width: 30%;
+    align-self: center;
+}
+.w-descuento{
+    width: 70%;
+    flex-direction: row;
+    align-self: center;
+}
+
+/* para el home de los productos*/
+.section-flex{
+    display: flex;
+    flex-wrap: wrap;
 }
 
   /* para la seccion del footer*/
