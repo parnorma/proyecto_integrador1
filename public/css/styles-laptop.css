@@ -6,9 +6,15 @@
       box-shadow: none;
     }
     .nav-bar{
-        display: block;
-    }  
+        display: flex;
+    } 
     .burger-menu{
         display: none;
-    }   
+    } 
+    .product{
+      width: 25%;
+    }  
+    .header-icono-barra{
+      justify-content: space-between;
+    }
   }
