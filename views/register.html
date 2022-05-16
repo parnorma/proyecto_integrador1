@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre - Registrar</title>
+    <!-- agregamos las fuentes a usar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- seleccionamos en font-awesome la version 5.15.4 para los iconos-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!--importamos el normalize-->
+    <!-- el normalize lo hago aca porque lo va a tener todas las carpetas de mi proyecto
+        es para que se vea igual en cualquier navegador, le sacamos los estilos extras
+        que tiene cada navegador
+        bajamos el normalize de google -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
+
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/styles-tablet.css" />
+    <link rel="stylesheet" href="/css/styles-laptop.css" />
+  </head>
+  <body class="bg-gray">
+    <header class="bg-yellow p-8">
+      <section class="fx fx-wrap fx-align-center">
+        <h1 class="w-50 w-desktop-33">
+          <a href="/">
+            <img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
+          </a>
+        </h1>
+        <form class="w-50 fx p-8 w-desktop-33">
+          <div class="form-field w-100 mb-0">
+            <div class="input-with-button">
+              <input type="text" class="form-input" name="search" />
+              <button class="input-button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <p class="text-center w-100 w-desktop-33">
+          <i class="fas fa-hand-holding-usd"></i>
+          Comprá en cuotas y sin tarjeta de crédito
+        </p>
+      </section>
+
+      <nav class="nav-bar mt-8 w-100 hide tablet-fx fx-space-between">
+        <ul class="nav-section fx">
+          <li class="mx-8"><a href="#">Ofertas</a></li>
+          <li class="mx-8"><a href="#">Tiendas Oficiales</a></li>
+          <li class="mx-8"><a href="#">Vender</a></li>
+          <li class="mx-8"><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="nav-section mb-8 fx">
+          <!--   emmet    copilot mb-8 header-navegacion header-perfil-->
+          <!-- li*4>e  -->
+          <li class="mx-8">
+            <a href="/register">Crea tu cuenta</a>
+            <i class="fas fa-address-card"></i>
+          </li>
+          <li>
+            <a href="/login">Ingresá</a>
+            <i class="fas fa-sign-in-alt"></i>
+          </li>
+          <li>
+            <a href="#">Mis Compras</a>
+            <i class="fas fa-shopping-basket"></i>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu font-heading tablet-hide mt-8">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="p-8 w-90 w-tablet-70 m-center">
+      <form action="/" method="get" class="mt-16">
+        <h3><p class="text-center">REGISTRO DE USUARIO</p></h3>
+        <!--NOMBRE Y APELLIDO-->
+        <div class="form-field error">
+          <h5>
+            <label for="nombre" class="accessibility-label"
+              >Nombre y apellido</label
+            >
+          </h5>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            class="form-input"
+            placeholder="Ingresá"
+          />
+          <span class="font-red">Error dato incorrecto</span>
+        </div>
+        <!--USERNAME-->
+        <div class="form-field error">
+          <h5>
+            <label for="user" class="accessibility-label">
+              Nombre de usuario
+            </label>
+          </h5>
+          <input type="text" name="user" id="user" class="form-input" />
+        </div>
+        <!--EMAIL-->
+        <div class="form-field error">
+          <h5>
+            <label for="email" class="accessibility-label"> Email </label>
+          </h5>
+          <input type="email" name="email" id="email" class="form-input" />
+        </div>
+        <!--FECHA DE NACIMIENTO-->
+        <div class="form-field">
+          <h5>
+            <label for="fnacimiento" class="accessibility-label"
+              >Fecha de Nacimiento</label
+            >
+          </h5>
+          <input
+            type="date"
+            name="fnacimiento"
+            id="fnacimiento"
+            class="form-input"
+          />
+        </div>
+        <!--DOMICILIO-->
+        <div class="form-field">
+          <h5>
+            <label for="domicilio" class="accessibility-label">Domicilio</label>
+          </h5>
+          <input
+            type="text"
+            name="domicilio"
+            id="domicilio"
+            class="form-input"
+          />
+        </div>
+        <!--PERFIL DE USUARIO -->
+        <h5>
+          <label for="perfil" class="accessibility-label"
+            >Perfil de Usuario</label
+          >
+        </h5>
+        <div class="form-field">
+          <div class="input-option w-50">
+            <input
+              type="radio"
+              name="perfil"
+              id="comprador"
+              value="comprador"
+            />
+            <label for="comprador" class="accessibility-label">Comprador</label>
+          </div>
+
+          <div class="input-option w-50">
+            <input type="radio" name="perfil" id="vendedor" value="vendedor" />
+            <label for="vendedor">Vendedor</label>
+          </div>
+        </div>
+        <!--CATEGORIAS DE INTERES -->
+        <div class="form-field">
+          <h5><label class="input-label">Categorías de interés</label></h5>
+
+          <section class="input-option w-100 pl-8">
+            <input
+              type="checkbox"
+              name="categorias"
+              id="electro"
+              value="electro"
+            />
+            <label for="electro">Electro </label>
+          </section>
+
+          <section class="input-option w-100 pl-8">
+            <input type="checkbox" name="categorias" id="moda" value="moda" />
+            <label for="moda">Moda </label>
+          </section>
+
+          <section class="input-option w-100 pl-8">
+            <input type="checkbox" name="categorias" id="hogar" value="hogar" />
+            <label for="hogar">Hogar </label>
+          </section>
+
+          <section class="input-option w-100 pl-8">
+            <input
+              type="checkbox"
+              name="categorias"
+              id="jugueteria"
+              value="jugueteria"
+            />
+            <label for="jugueteria">Jugueteria </label>
+          </section>
+
+          <section class="input-option w-100 pl-8">
+            <input
+              type="checkbox"
+              name="categorias"
+              id="vidasana"
+              value="vidasana"
+            />
+            <label for="vidasana">Vida Sana </label>
+          </section>
+          <span class="error-msg">Debe seleccionar al menos una opción</span>
+        </div>
+        <!--FOTO DE USUARIO -->
+        <div class="form-field">
+          <h5><label for="foto">Foto de Usuario</label></h5>
+          <input
+            type="file"
+            name="foto"
+            id="foto"
+            accept="image/*"
+            class="w-100"
+          />
+        </div>
+        <!--PASSWORD -->
+        <div class="form-field error">
+          <h5><label for="pass">Contraseña</label></h5>
+          <input type="password" name="pass" id="pass" class="form-input" />
+        </div>
+        <!--CONFIRMAR PASSWORD -->
+        <div class="form-field error">
+          <h5><label for="cpass">Confirmar contraseña</label></h5>
+          <input type="password" name="cpass" id="cpass" class="form-input" />
+        </div>
+        <!--BUTTONS -->
+        <button type="submit" class="button font-white bg-light-blue w-100">
+          Enviar
+        </button>
+        <button type="reset" class="button font-white bg-dark-gray w-100">
+          Borrar
+        </button>
+      </form>
+    </main>
+
+    <footer class="bg-white">
+      <section class="footer-align ptcopyright-50">
+        <header>
+          <i class="fas fa-credit-card icon-footer font-light-blue"></i>
+        </header>
+        <main>
+          <h5 class="font-small">Pagá con tarjeta o efectivo</h5>
+        </main>
+        <footer>
+          <span>
+            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+            efectivo en puntos de pago. ¡Y siempre es seguro!
+          </span>
+        </footer>
+      </section>
+      <section class="footer-align">
+        <header>
+          <i class="fas fa-gift icon-footer font-light-blue"></i>
+        </header>
+        <main>
+          <h5 class="font-small">Envío gratis desde $ 2.500</h5>
+        </main>
+        <footer>
+          <span>
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+            miles de productos. Es un beneficio de Mercado Puntos.
+          </span>
+        </footer>
+      </section>
+      <section class="footer-align">
+        <header>
+          <i class="fas fa-user-shield icon-footer font-light-blue"></i>
+        </header>
+        <main>
+          <h5 class="font-small">Seguridad de principio a fin</h5>
+        </main>
+        <footer>
+          <span>
+            ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas
+            hacer porque estás siempre protegid@
+          </span>
+        </footer>
+      </section>
+
+      <p class="copyright font-medium">
+        Copyright 1999-2020 MercadoLiebre S.R.L
+      </p>
+    </footer>
+  </body>
+</html>

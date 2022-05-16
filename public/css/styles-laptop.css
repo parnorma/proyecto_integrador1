@@ -1,11 +1,11 @@
 @media (min-width: 769px) {
-    .product-title {      
-      display: none;
-    }
-    .product {
-      box-shadow: none;
-    }
-    .nav-bar{
+  .product-title {
+    display: none;
+  }
+  .product {
+    box-shadow: none;
+  }
+  /*.nav-bar{
         display: flex;
     } 
     .burger-menu{
@@ -16,5 +16,5 @@
     }  
     .header-icono-barra{
       justify-content: space-between;
-    }
-  }
+    }*/
+}

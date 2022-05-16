@@ -1,187 +1,247 @@
 /* aca solo ponemos tipografia colores*/
 /* quitamos margenes y espaciados*/
 
-h1{
-    margin:0;
+h1 {
+  margin: 0;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }
-.font-yellow{
-    color:#EAC926;
+.font-yellow {
+  color: #eac926;
 }
-.bg-yellow{
-    background-color: #EAC926;
+.bg-yellow {
+  background-color: #eac926;
 }
-.font-blue{
-    color:#03264C;
+.font-blue {
+  color: #03264c;
 }
-.bg-blue{
-    background-color:#03264C;
+.bg-blue {
+  background-color: #03264c;
 }
-.font-light-blue{
-    color:#1259c3;
+.font-light-blue {
+  color: #1259c3;
 }
-.bg-light-blue{
-    background-color:#1259c3;
+.bg-light-blue {
+  background-color: #1259c3;
 }
-.font-dark-gray{
-    color:#666;
+.font-dark-gray {
+  color: #666;
 }
-.bg-dark-gray{
-    background-color:#666;
+.bg-dark-gray {
+  background-color: #666;
 }
-.font-gray{
-    color:#ebebeb;
+.font-gray {
+  color: #ebebeb;
 }
-.bg-gray{
-    background-color:#ebebeb;
+.bg-gray {
+  background-color: #ebebeb;
 }
-.font-green{
-    color:#39b54a;
+.border-light-grey {
+  border-color: #ebebeb;
 }
-.bg-green{
-    background-color:#39b54a;
+.font-green {
+  color: #39b54a;
+}
+.bg-green {
+  background-color: #39b54a;
 }
 .bg-white {
-    background-color: white;
+  background-color: white;
+}
+.font-white {
+  color: white;
+}
+.font-red {
+  color: red;
 }
 
-.font-heading{
-    font-size: 24px;
+.font-heading {
+  font-size: 24px;
 }
-.font-large{
-    font-size: 18px;
+.font-large {
+  font-size: 18px;
 }
-.font-small{
-    font-size: 16px;
+.font-small {
+  font-size: 16px;
 }
+.font-wb {
+  font-weight: bold;
+}
+
 /* .nav-bar > ul > li > a*/
-.nav-bar{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between; 
+/*.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.nav-section{
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+.nav-section {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}*/
+.nav-section li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-section li {
+  list-style: none;
+}
+/*.header-navegacion {
+  width: 70%;
+  justify-content: flex-start;
+}
+.header-perfil {
+  width: 30%;
+  justify-content: space-between;
+}
+.li-header-nav {
+  padding-right: 5%;
+}*/
 
+.burger-menu {
+  text-align: center;
 }
-.nav-section li a{       
-    text-decoration: none;  
-    color: black;      
-}
-.nav-section li{
-    list-style: none;
-}
-.header-navegacion{
-    width: 70%; 
-    justify-content: flex-start;     
-}
-.header-perfil{
-   width: 30%;    
-   justify-content: space-between;   
-}
-.li-header-nav{
-    padding-right: 5%;
-}
-
-.burger-menu{
-    text-align: center;
-}
-.burger-menu i{
-    padding: 8px;
-    background-color: #1259c3;
-    color: #ebebeb;
-    border-radius: 5px;
+.burger-menu i {
+  padding: 8px;
+  background-color: #1259c3;
+  color: #ebebeb;
+  border-radius: 5px;
 }
 .truck-icon {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-
-  }
-.product {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    width: 100%;
-  }
-
-.product-title{
-    margin-top: 10px;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
 }
-.ptb-com-cuotas{
-    padding-top: 3%;
-    padding-bottom: 1%;
+.product {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.form-field {
+  font-size: 16px;
+}
+/*.product-title {
+  margin-top: 10px;
+}*/
+.ptb-com-cuotas {
+  padding-top: 3%;
+  padding-bottom: 1%;
 }
 /* para que el precio y el descuento queden en la misma linea*/
-.flex-precio-desc{
-    display: flex;
-    flex-wrap: wrap;  
+.flex-precio-desc {
+  display: flex;
+  flex-wrap: wrap;
 }
-.w-precio{
-    width: 30%;
-    align-self: center;
+.w-precio {
+  width: 30%;
+  align-self: center;
 }
-.w-descuento{
-    width: 70%;
-    flex-direction: row;
-    align-self: center;
+.w-descuento {
+  width: 70%;
+  flex-direction: row;
+  align-self: center;
 }
 
 /* para el home de los productos*/
-.section-flex{
-    display: flex;
-    flex-wrap: wrap;
+.section-flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 /* para la cabecera del icono y la barra de busqueda*/
-.header-icono-barra{
-    display: flex ;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+.header-icono-barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
-.icono-header{
-    width: 50%;
+.icono-header {
+  width: 50%;
 }
-.barra-header{
-    width: 50%;
+.barra-header {
+  width: 50%;
 }
-.tarjetas-header{
-    width: 100%;
+.tarjetas-header {
+  width: 100%;
 }
-  /* para la seccion del footer*/
-.footer-align{
-    text-align: center;
-    margin-bottom: 15px;  
-    margin-left: 20%;
-    margin-right: 20%; 
+/* para la seccion del footer*/
+.footer-align {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
-.icon-footer{
-    font-size: 200%;    
+.icon-footer {
+  font-size: 200%;
 }
-.footer-align section{
-    margin-bottom: 4%;
+.footer-align section {
+  margin-bottom: 4%;
 }
-.footer-align section footer{
-    margin-top: 0.5%;
-}
-
-.copyright{
-    text-align: left;
-    margin: 20px;
-    padding-top: 5%;
-}
-.ptcopyright-50{
-    padding-top: 50px;
+.footer-align section footer {
+  margin-top: 0.5%;
 }
 
+.copyright {
+  text-align: left;
+  margin: 20px;
+  padding-top: 5%;
+}
+.ptcopyright-50 {
+  padding-top: 50px;
+}
+
+/* para registro de usuario*/
+.main-w-reg {
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+}
+.main-w-reg p {
+  padding-top: 2%;
+}
+.buttons-reg {
+  width: 100%;
+  text-align: center;
+}
+.section-cat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.mt-titulo {
+  margin-top: 10%;
+}
+.button-r-enviar {
+  background-color: #1259c3;
+  color: white;
+  border: 0;
+  padding: 1%;
+  width: 100%;
+  font-size: 14px;
+}
+.button-r-enviar {
+  background-color: #1259c3;
+  color: white;
+  border: 0;
+  padding: 1%;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #1259c3;
+}
+.button-r-borrar {
+  background-color: #1259c3;
+  color: white;
+  border: 0;
+  padding: 1%;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 2%;
+}
