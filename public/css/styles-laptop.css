@@ -36,13 +36,13 @@
     0% {
       transform: rotateZ(0deg);
     }
-    25% {
+    20% {
       transform: rotateZ(15deg);
     }
     /*50% {
       transform: rotateZ(0deg);
     }*/
-    50% {
+    80% {
       transform: rotateZ(-15deg);
     }
     100% {
@@ -51,10 +51,10 @@
   }
   .icon-fd:hover {
     color: #39b54a;
-    font-size: 40px;
+    /* font-size: 40px;*/
     animation-name: movimiento;
     animation-duration: 2s;
-    animation-iteration-count: 3;
+    animation-iteration-count: infinite;
     transition-property: color;
     transition-duration: 0.5s;
   }
