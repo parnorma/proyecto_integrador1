@@ -60,6 +60,9 @@ body {
 .font-heading {
   font-size: 24px;
 }
+.font-xlarge {
+  font-size: 30px;
+}
 .font-large {
   font-size: 18px;
 }
@@ -124,6 +127,7 @@ body {
 }
 .product {
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  width: 100%;
 }
 
 .form-field {
@@ -188,11 +192,13 @@ body {
 .footer-align section footer {
   margin-top: 0.5%;
 }
-
+.p-divfooter {
+  /* top right bottom left*/
+  padding: 5% 10% 5% 5%;
+}
 .copyright {
   text-align: left;
   margin: 20px;
-  padding-top: 5%;
 }
 .ptcopyright-50 {
   padding-top: 50px;

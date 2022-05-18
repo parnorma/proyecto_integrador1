@@ -5,6 +5,59 @@
   .product {
     box-shadow: none;
   }
+  .product:hover .product-title {
+    display: block;
+  }
+
+  .product:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .truck-icon:hover {
+    transform: rotateZ(-90deg);
+    transition: 3s;
+  }
+  /* cambio color del boton enviar*/
+  .submit_login:hover {
+    background-color: #0022aa;
+  }
+
+  /* para alinear el footer */
+  .footer-fx {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 100%;
+  }
+  .footer-fx div {
+    text-align: center;
+  }
+  @keyframes movimiento {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    25% {
+      transform: rotateZ(15deg);
+    }
+    /*50% {
+      transform: rotateZ(0deg);
+    }*/
+    50% {
+      transform: rotateZ(-15deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+  .icon-fd:hover {
+    color: #39b54a;
+    font-size: 40px;
+    animation-name: movimiento;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
   /*.nav-bar{
         display: flex;
     } 
