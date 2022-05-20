@@ -3,12 +3,11 @@ const express = require("express");
 const app = express();
 
 //const PORT = 3005;
-
+/* para heroku */
+const PORT = process.env.PORT || 3005;
 app.listen(PORT, () => {
   console.log("Servidor activo " + PORT);
 });
-/* para heroku */
-const PORT = process.env.PORT || 3005;
 
 // esto es un mildware para permitir que se puedan ver las imagenes
 // esto nos permite que podamos cargar las imagenes partiendo desde /
